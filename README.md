@@ -1,15 +1,10 @@
 # ts_ddd
 
-To install dependencies:
+## Requirements
+- docker
+- setup '.env' file
 
-```bash
-bun install
+## Usage
 ```
-
-To run:
-
-```bash
-bun run index.ts
+docker-compose up -d --build
 ```
-
-This project was created using `bun init` in bun v1.1.45. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
