@@ -1,0 +1,12 @@
+{
+  "name": "ts_ddd",
+  "module": "index.ts",
+  "type": "module",
+  "workspaces": ["features/*", "api/*"],
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}

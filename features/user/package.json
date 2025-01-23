@@ -1,0 +1,15 @@
+{
+  "name": "user",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "mongoose": "^8.9.5",
+    "shared": "workspace:*"
+  }
+}
