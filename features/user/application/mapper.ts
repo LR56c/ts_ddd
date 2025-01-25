@@ -1,5 +1,5 @@
 import { User }         from "../domain/user.ts"
-import type { UserDTO } from "./dto.ts"
+import { UserDTO } from "./dto.ts"
 
 export class UserMapper {
   public static toDTO( user: User ): UserDTO {
