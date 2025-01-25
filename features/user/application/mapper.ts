@@ -18,19 +18,15 @@ export class UserMapper {
     )
   }
 
-  public static toJson( user: User ): Record<string, any> {
+  public static toJson( user: UserDTO ): Record<string, any> {
     return {
-      id   : user.id.value,
+      id   : user.id,
       name : user.name,
       email: user.email
     }
   }
 
-  public static fromJson( json: Record<string, any> ): User {
-    return User.fromPrimitives(
-      json.id,
-      json.name,
-      json.email
-    )
+  public static fromJson( json: Record<string, any> ): UserDTO {
+    return new UserDTO( json.id, json.name, json.email)
   }
 }
